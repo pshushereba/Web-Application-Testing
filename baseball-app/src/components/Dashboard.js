@@ -9,7 +9,9 @@ const Dashboard = (props) => {
                     name="ball"
                     onClick={() => props.add_ball()}
                     >Ball</button>
-                <button onClick={() => props.add_strike()}>Strike</button>
+                <button
+                    data-testid="strike"
+                    onClick={() => props.add_strike()}>Strike</button>
                 <button onClick={() => props.add_foul()}>Foul</button>
                 <button onClick={() => props.add_hit()}>Hit</button>
             </div>
